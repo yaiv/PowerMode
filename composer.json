@@ -1,0 +1,22 @@
+{
+    "name": "admin/proyecto-bienes-raices",
+    "description": "Creando proyecto con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "yaiv",
+            "email": "yaiv.gm@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^3.11",
+        "vlucas/phpdotenv": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\" : "./models",
+            "MVC\\" : "./", 
+            "Controllers\\" : "./controllers"
+        }
+    }
+}
