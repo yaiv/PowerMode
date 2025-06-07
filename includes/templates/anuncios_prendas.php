@@ -9,9 +9,6 @@ if ($_SERVER['SCRIPT_NAME'] === '/anuncios_prendas.php'){
     $prendas = Prenda::get(4);
 }
 
-// Número de WhatsApp del administrador (cambiar por el número real)
-$numeroWhatsApp = "5551464297"; // Formato: código de país + número sin espacios ni símbolos
-
 ?>        
 
 <main>

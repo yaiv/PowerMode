@@ -53,16 +53,13 @@
                 <div class="derecha">
                     <img class="dark-mode-boton" src="/build/img/dark-mode.svg" alt="boton dark mode">
                     <nav class="navegacion">
-
-                        <?php if(!$auth): ?>
-                        <a href="/nosotros">Nosotros</a>
-                        <a href="/prendas">Prendas</a>
-                        <a href="/suplementos">Suplementos</a>
-                        <a href="/login">Iniciar Sesión</a>
-                        <?php else:  ?>
+                        <?php if($auth): ?>
                             <a href="/admin">Administrar</a>
                             <a href="/logout">Cerrar Sesión</a>
-                             
+                        <?php else: ?>
+                            <a href="/nosotros">Nosotros</a>
+                            <a href="/prendas">Prendas</a>
+                            <a href="/suplementos">Suplementos</a>
                         <?php endif; ?>
                     </nav>
                 </div>
@@ -85,9 +82,12 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="/nosotros">Nosotros</a>
-                <a href="/prendas">Prendas</a>
-                <a href="/suplementos">Suplementos</a>
+                <?php if(!$auth): ?>
+                    <a href="/nosotros">Nosotros</a>
+                    <a href="/prendas">Prendas</a>
+                    <a href="/suplementos">Suplementos</a>
+                    <a href="/login" class="admin-link">Administrador</a>
+                <?php endif; ?>
             </nav>
         </div>
 

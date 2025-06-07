@@ -1,0 +1,67 @@
+Public_html
+ .git
+
+ build
+    css
+    img
+    js
+
+ controllers
+    LoginController.pp
+    PaginasController.php
+    PrendaController.php
+    SuplementoController.php
+
+ database
+    migracion.sql
+
+ imagenes
+
+ includes
+    config
+    templates
+    app.php
+    funciones.php
+
+ models
+    ActiveRecord.php
+    Admin.php
+    Prenda.php
+    Suplemento.php
+
+ vendor
+
+ views
+    admin
+        admin.php
+
+    auth
+        login.php
+    Paginas
+        index.php
+        listado_p.php
+        listado_s.php
+        nosotros.php
+        prenda.php
+        prendas.php
+        suplemento.php
+        suplementos.php
+  Prendas
+    actualizar.php
+    crear.php
+    formulario_p.php
+    prenda.php
+  Suplementos
+    actualizar.php
+    crear.php
+    formulario_p.php
+  Layout.php
+
+ .env
+ .ignore
+ .htaccess
+ composer.json
+ composer.lock
+ index.php
+ README.md
+ Router.php

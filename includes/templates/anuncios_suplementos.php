@@ -9,9 +9,6 @@ if ($_SERVER['SCRIPT_NAME'] === '/anuncios_suplementos.php'){
     $suplementos = Suplemento::get(4);
 }
 
-// Número de WhatsApp del administrador
-$numeroWhatsApp = "5551464297"; // Formato: código de país + número sin espacios ni símbolos
-
 ?>        
 
 <main>

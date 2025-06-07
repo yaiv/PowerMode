@@ -1,6 +1,6 @@
 <?php
 // Constantes de configuración
-define('WHATSAPP_NUMERO', '5583225207');
+define('WHATSAPP_NUMERO', '5215551464297');
 define('DOMINIO_PRODUCCION', 'powermode.com.mx'); // Cambiar al dominio real de producción
 
 // Función para validar el producto
@@ -96,10 +96,11 @@ function generarMensajeWhatsApp($producto, $tipo) {
         $mensajeBase .= "Link: " . $urlCompleta;
         
         // Codificar el mensaje para URL de manera segura
-        $mensajeCodificado = rawurlencode($mensajeBase);
+        $mensajeCodificado = urlencode($mensajeBase);
         
         // Crear enlace de WhatsApp usando la API oficial
-        return "https://api.whatsapp.com/send/?phone=" . WHATSAPP_NUMERO . "&text=" . $mensajeCodificado . "&type=phone_number&app_absent=0";
+        return "https://wa.me/" . WHATSAPP_NUMERO . "?text=" . $mensajeCodificado;
+
     } catch (Exception $e) {
         // Log del error si es necesario
         return false;
